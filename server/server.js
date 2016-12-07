@@ -10,12 +10,16 @@ let WebSocketServer = require('ws').Server;
 let webSocketServer = new WebSocketServer({ server });
 let express = require('express');
 let app = express();
-const port = 4800;
+const port = 9000;
 
 let clients = {};
 
+const MessageType = {
+  Message: 0
+};
 
-app.use(express.static('prod'));
+
+app.use(express.static('build'));
 
 webSocketServer.on('connection', (ws) => {
   let id = ID();

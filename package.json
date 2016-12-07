@@ -7,15 +7,25 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "tslint",
     "build": "webpack",
-    "start": "node ./server/server.js"
+    "prod.serve": "node ./server/server.js",
+    "start": "node_modules/.bin/webpack-dev-server --open"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "awesome-typescript-loader": "^3.0.0-beta.9",
+    "css-loader": "^0.26.0",
+    "extract-text-webpack-plugin": "^2.0.0-beta.4",
+    "html-webpack-plugin": "^2.24.1",
+    "node-sass": "^3.13.0",
+    "postcss-loader": "^1.1.1",
+    "sass-loader": "^4.0.2",
+    "style-loader": "^0.13.1",
     "tslint": "^4.0.2",
     "typescript": "^2.0.10",
-    "webpack": "^1.13.3"
+    "webpack": "^2.1.0-beta.27",
+    "webpack-dev-server": "^2.1.0-beta.12"
   },
   "dependencies": {
     "express": "^4.14.0",

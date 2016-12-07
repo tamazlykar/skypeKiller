@@ -1,0 +1,88 @@
+$headerColor: #051C38;
+$sidebarColor: #143153;
+$historyColor: #2B4A6F;
+$messageFormColor: #4B688B;
+$messageColor: #748BA7;
+
+html, body, row {
+  height: 100%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+
+.header {
+  background: $headerColor;
+  height: 30px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.sidebar {
+  background: $historyColor;
+  width: 25%;
+  height: 100%;
+  border-right: 1px solid $sidebarColor;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.messages-zone {
+
+}
+
+#messages-history {
+  background: $historyColor;
+  flex-basis: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+#history {
+  overflow-y: auto;
+  width: 100%;
+}
+
+.message-sender {
+  background: $messageFormColor;
+  flex-basis: 30px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.message {
+  background: #748BA7;
+  margin-left: 30px;
+  margin-right: 30px;
+  padding: 10px;
+  margin-bottom: 10px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+input {
+  width: 100%;
+  height: 30px;
+}
+
+p {
+  color: whitesmoke;
+  padding-left: 30px;
+}
